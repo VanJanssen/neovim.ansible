@@ -1,2 +1,5 @@
 ---
-# tasks file for neovim
+- name: Install Neovim
+  package:
+    name: {{ neovim_package }}
+    state: present

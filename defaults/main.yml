@@ -1,2 +1,2 @@
 ---
-# defaults file for neovim
+neovim_package: neovim
