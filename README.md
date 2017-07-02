@@ -1,38 +1,41 @@
-Role Name
+Neovim
 =========
 
-A brief description of the role goes here.
+Install Neovim and manage it's dotfiles for multiple users.
 
 Requirements
 ------------
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+Must have privilege to:
+* install software on the host.
+* be able to use `become_user` to manage a user's dotfiles.
 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+The name of the package to install can be configured with `neovim_package`, it
+defaults to `neovim`.
 
 Dependencies
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+This role has no dependencies.
 
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+This role can be used without any additional values to simply install Neovim.
 
     - hosts: servers
       roles:
-         - { role: neovim, x: 42 }
+         - { role: vanjanssen.neovim }
 
 License
 -------
 
-BSD
+MIT
 
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+Author: Erwin Janssen
