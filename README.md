@@ -28,7 +28,7 @@ This role can be used without any additional values to simply install Neovim.
 
     - hosts: servers
       roles:
-         - { role: vanjanssen.neovim }
+         - { role: VanJanssen.neovim }
 
 License
 -------
